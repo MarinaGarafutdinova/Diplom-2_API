@@ -17,9 +17,9 @@ public class UserUpdateTests {
     private User user;
     private String accessToken;
 
-    private final String updName = RandomStringUtils.randomAlphabetic(3);
-    private final String updEmail = RandomStringUtils.randomAlphabetic(3);
-    private final String updPassword = RandomStringUtils.randomAlphabetic(3);
+    private final String updName = "Mari"+ RandomStringUtils.randomAlphabetic(3);
+    private final String updEmail = "Mari"+ RandomStringUtils.randomAlphabetic(3)+ "@yandex.ru";
+    private final String updPassword = "Pas" + RandomStringUtils.randomAlphabetic(3);
     User updUser = new User();
 
 

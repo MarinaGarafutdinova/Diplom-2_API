@@ -6,6 +6,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Before;
@@ -22,9 +23,9 @@ public class UserCreatingTest {
     @Before
     public void setUp(){
         RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
-        name = "Marina";
-        email = "Mari111@yandex.ru";
-        password = "Pas111";
+        name = "Mari"+ RandomStringUtils.randomAlphabetic(3);
+        email = "Mari"+ RandomStringUtils.randomAlphabetic(3)+ "@yandex.ru";
+        password = "Pas" + RandomStringUtils.randomAlphabetic(3);
         userSteps = new UserSteps();
         user = new User();
     }
