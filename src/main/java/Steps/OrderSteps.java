@@ -2,7 +2,6 @@ package Steps;
 
 import Objects.Ingredients;
 import Objects.Order;
-import Objects.User;
 import io.qameta.allure.Step;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.Response;

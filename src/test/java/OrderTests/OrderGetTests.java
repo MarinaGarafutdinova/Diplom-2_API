@@ -1,7 +1,6 @@
 package OrderTests;
 
 import Objects.User;
-import Steps.OrderSteps;
 import Steps.UserSteps;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -12,12 +11,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.given;
-
 public class OrderGetTests {
-    private String email;
-    private String password;
-    private String name;
+    protected String email;
+    protected String password;
+    protected String name;
     private UserSteps userSteps;
     private String accessToken;
     private User user;
